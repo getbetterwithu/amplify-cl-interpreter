@@ -6,7 +6,7 @@ Amplify Classroom의 Computation Layer(CL) 코드를 해석해 주는 스킬입�
 
 ## 설치 방법
 
-스킬이 레포 루트에 있으므로 레포 주소만으로 설치합니다.
+레포 주소만으로 설치합니다. 스킬 파일은 `skills/cl-interpreter/` 아래에 있습니다.
 
 - **Claude Code:**
   ```
@@ -14,12 +14,13 @@ Amplify Classroom의 Computation Layer(CL) 코드를 해석해 주는 스킬입�
   claude plugin install amplify-cl-interpreter@amplify-cl-interpreter
   ```
   설치 후 `claude plugin list`에서 enabled로 보이면 됩니다. 다음 세션부터 적용됩니다.
-- **Gemini CLI:**
+- **Antigravity** (`agy`):
   ```
-  gemini skills install https://github.com/getbetterwithu/amplify-cl-interpreter --scope user
+  agy plugin install https://github.com/getbetterwithu/amplify-cl-interpreter
+  agy plugin list
   ```
-  설치 후 `gemini skills list`에서 `cl-interpreter [Enabled]`가 보이면 됩니다.
-- **그 밖의 AI 도구**(ChatGPT 웹 등): `guides/` 폴더의 안내를 따릅니다.
+  설치 결과에 `skills : 1 processed`가 보이면 됩니다. 이전에 설치해 빈 플러그인이 남아 있다면 `agy plugin uninstall amplify-cl-interpreter` 후 다시 설치합니다.
+- **그 밖의 AI 도구**(ChatGPT 웹 등): `skills/cl-interpreter/guides/` 폴더의 안내를 따릅니다.
 
 ## 코드를 올리는 방법
 
@@ -43,4 +44,4 @@ correct: this.numericValue > 9.99 and this.numericValue < 10.01
 
 ## 라이선스와 출처
 
-이 레포의 스킬 지침과 정리한 내용은 MIT 라이선스입니다(`LICENSE`). 다만 `knowledge/official-index.md`, `knowledge/official-docs.md`, `knowledge/site-core.md`에는 Amplify Classroom 공식 문서의 원문이 들어 있습니다. 그 원문의 저작권은 원 저작권자에게 있으며 MIT 라이선스 범위에 포함되지 않습니다. 원문은 공식 문서(classroom.amplify.com/computation-layer/documentation)를 확인해 주세요.
+이 레포의 스킬 지침과 정리한 내용은 MIT 라이선스입니다(`LICENSE`). 다만 `skills/cl-interpreter/knowledge/official-index.md`, `official-docs.md`, `site-core.md`에는 Amplify Classroom 공식 문서의 원문이 들어 있습니다. 그 원문의 저작권은 원 저작권자에게 있으며 MIT 라이선스 범위에 포함되지 않습니다. 원문은 공식 문서(classroom.amplify.com/computation-layer/documentation)를 확인해 주세요.
