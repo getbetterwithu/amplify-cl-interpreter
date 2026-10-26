@@ -20,7 +20,14 @@ Amplify Classroom의 Computation Layer(CL) 코드를 해석해 주는 스킬입�
   agy plugin list
   ```
   설치 결과에 `skills : 1 processed`가 보이면 됩니다. 이전에 설치해 빈 플러그인이 남아 있다면 `agy plugin uninstall amplify-cl-interpreter` 후 다시 설치합니다.
-- **그 밖의 AI 도구**(ChatGPT 웹 등): `skills/cl-interpreter/guides/` 폴더의 안내를 따릅니다.
+- **Codex CLI** (OpenAI):
+  ```
+  codex plugin marketplace add getbetterwithu/amplify-cl-interpreter
+  codex plugin add amplify-cl-interpreter@amplify-cl-interpreter
+  codex plugin list
+  ```
+  `codex plugin list`에서 `installed, enabled`로 보이면 됩니다.
+- **ChatGPT 웹·앱 등 명령어를 쓸 수 없는 도구**: `skills/cl-interpreter/guides/` 폴더의 안내를 따릅니다.
 
 ## 코드를 올리는 방법
 
