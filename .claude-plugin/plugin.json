@@ -1,0 +1,8 @@
+{
+  "name": "amplify-cl-interpreter",
+  "version": "0.3.2",
+  "description": "Amplify Classroom의 Computation Layer(CL) 코드를 해석하고 CL 문법 질문에 답하는 스킬",
+  "author": { "name": "BetterwithU" },
+  "license": "MIT",
+  "skills": ["./"]
+}

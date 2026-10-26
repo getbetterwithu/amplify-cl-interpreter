@@ -1,0 +1,12 @@
+{
+  "name": "amplify-cl-interpreter",
+  "description": "Amplify Classroom CL 해석 스킬",
+  "owner": { "name": "BetterwithU" },
+  "plugins": [
+    {
+      "name": "amplify-cl-interpreter",
+      "source": "./",
+      "description": "Amplify Classroom CL 코드 해석 스킬"
+    }
+  ]
+}
